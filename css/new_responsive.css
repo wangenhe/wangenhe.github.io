@@ -1,0 +1,41 @@
+/* Ensure images and banners are responsive */
+img, .banner {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust the main container's width */
+.container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/* Adjust the layout for smaller devices */
+@media only screen and (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make the sidebar collapse */
+    .sidebar {
+        display: none;
+    }
+
+    /* Adjust content width */
+    .content {
+        width: 100%;
+    }
+
+    /* Ensure text size is appropriate */
+    body, h1, h2, h3, h4, h5, h6 {
+        font-size: 1em;
+    }
+
+    /* Adjust padding and margins */
+    .content-wrapper, .footer {
+        padding: 10px;
+    }
+}
